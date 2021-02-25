@@ -48,7 +48,7 @@
     "sql"
   ],
   "main": "./dist/index.js",
-  "name": "pg-formatter",
+  "name": "@curvewise-forks/pg-formatter",
   "nyc": {
     "include": [
       "src/**/*.js"
@@ -62,9 +62,9 @@
     ],
     "sourceMap": false
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:gajus/pg-formatter.git"
+  "repository": "curvewise-forks/pg-formatter",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/curvewise-forks"
   },
   "scripts": {
     "build": "rm -fr ./dist && babel ./src --out-dir ./dist --copy-files --source-maps",
@@ -72,6 +72,6 @@
     "lint": "eslint ./src ./test && flow",
     "test": "ava --serial --verbose"
   },
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "BSD-3-Clause"
 }
