@@ -63,11 +63,12 @@
     "sourceMap": false
   },
   "scripts": {
+    "prepare": "npm run build-pg-formatter && npm run build",
     "build": "rm -fr ./dist && babel ./src --out-dir ./dist --copy-files --source-maps",
     "build-pg-formatter": "rm -fr ./src/pg-formatter && mkdir -p ./src/pg-formatter && curl -LkSs http://github.com/darold/pgFormatter/tarball/master/ | tar xz --strip-components=1 -C ./src/pg-formatter",
     "lint": "eslint ./src ./test && flow",
     "test": "ava --serial --verbose"
   },
-  "version": "1.3.0",
+  "version": "1.3.1",
   "license": "BSD-3-Clause"
 }
