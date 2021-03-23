@@ -48,7 +48,7 @@
     "sql"
   ],
   "main": "./dist/index.js",
-  "name": "@curvewise-forks/pg-formatter",
+  "name": "@curvewise/pg-formatter",
   "nyc": {
     "include": [
       "src/**/*.js"
@@ -61,10 +61,6 @@
       "@babel/register"
     ],
     "sourceMap": false
-  },
-  "repository": "curvewise-forks/pg-formatter",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/curvewise-forks"
   },
   "scripts": {
     "build": "rm -fr ./dist && babel ./src --out-dir ./dist --copy-files --source-maps",
