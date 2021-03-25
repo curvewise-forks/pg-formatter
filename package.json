@@ -48,7 +48,7 @@
     "sql"
   ],
   "main": "./dist/index.js",
-  "name": "@curvewise/pg-formatter",
+  "name": "@curvewise-public/pg-formatter",
   "nyc": {
     "include": [
       "src/**/*.js"
